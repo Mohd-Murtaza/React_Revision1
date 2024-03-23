@@ -1,0 +1,32 @@
+{
+  "todos": [
+    {
+      "id": "0629",
+      "title": "buy graps",
+      "completionDate": "2024-03-31",
+      "assignedTo": "Murtaza",
+      "status": true
+    },
+    {
+      "id": "df12",
+      "title": "delhi",
+      "completionDate": "2024-03-29",
+      "assignedTo": "Murtaza",
+      "status": true
+    },
+    {
+      "id": "0b75",
+      "title": "chekc",
+      "completionDate": "2024-03-29",
+      "assignedTo": "Rahul",
+      "status": true
+    },
+    {
+      "id": "a8b5",
+      "title": "learn Mongoose",
+      "completionDate": "2024-04-07",
+      "assignedTo": "Rahul",
+      "status": true
+    }
+  ]
+}
