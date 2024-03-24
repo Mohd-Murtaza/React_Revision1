@@ -17,7 +17,7 @@ const AddTask = () => {
     title: "",
     completionDate: "",
     assignedTo: "",
-    status: false,
+    status: "incomplete",
   };
   const [todoData, setTodoData] = useState(initialTodoData);
   const [todoAdd,setTodoAdd]=useState(false)
@@ -35,16 +35,18 @@ const AddTask = () => {
           title: todoData.title,
           completionDate: todoData.completionDate,
           assignedTo: todoData.assignedTo,
-          status: false,
+          status: "incomplete",
         });
+        if (postData){
+            setTodoAdd(!todoAdd)
+            setTodoData(initialTodoData)
+        }
         toast({
           title: `Todo added succefully`,
           status: "success",
           isClosable: true,
           position: "top",
         });
-        setTodoAdd(!todoAdd);
-        setTodoData(initialTodoData);
       }else{
         toast({
         title: `Please fill all the details`,

@@ -1,32 +1,60 @@
 {
   "todos": [
     {
-      "id": "0629",
-      "title": "buy graps",
-      "completionDate": "2024-03-31",
+      "id": "2727",
+      "title": "go to delhi ",
+      "completionDate": "2024-04-04",
       "assignedTo": "Murtaza",
-      "status": true
+      "status": "completed"
     },
     {
-      "id": "df12",
-      "title": "delhi",
-      "completionDate": "2024-03-29",
+      "id": "5a5c",
+      "title": "go to mumbai",
+      "completionDate": "2024-04-05",
+      "assignedTo": "Rahul",
+      "status": "completed"
+    },
+    {
+      "id": "e218",
+      "title": "go to delhi",
+      "completionDate": "2024-04-04",
+      "assignedTo": "Rahul",
+      "status": "incomplete"
+    },
+    {
+      "id": "72f4",
+      "title": "go to bangalore",
+      "completionDate": "2024-04-05",
+      "assignedTo": "Rahul",
+      "status": "incomplete"
+    },
+    {
+      "id": "b7b7",
+      "title": "go to chennai",
+      "completionDate": "2024-04-04",
+      "assignedTo": "Shubham",
+      "status": "incomplete"
+    },
+    {
+      "id": "2555",
+      "title": "khkjkykkh",
+      "completionDate": "2024-04-06",
       "assignedTo": "Murtaza",
-      "status": true
+      "status": "completed"
     },
     {
-      "id": "0b75",
-      "title": "chekc",
-      "completionDate": "2024-03-29",
-      "assignedTo": "Rahul",
-      "status": true
+      "id": "51df",
+      "title": "I want to go New York",
+      "completionDate": "2024-04-05",
+      "assignedTo": "Murtaza",
+      "status": "incomplete"
     },
     {
-      "id": "a8b5",
-      "title": "learn Mongoose",
-      "completionDate": "2024-04-07",
-      "assignedTo": "Rahul",
-      "status": true
+      "id": "8294",
+      "title": "I wanna go to Maxico",
+      "completionDate": "2024-04-02",
+      "assignedTo": "Murtaza",
+      "status": "incomplete"
     }
   ]
 }
