@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path="/home" element={isAuth?<Home />:<Login />} />
+        <Route path="/" element={isAuth?<Home />:<Login />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/products" element={isAuth?<Products/>:<Login/>} />
       </Routes>
