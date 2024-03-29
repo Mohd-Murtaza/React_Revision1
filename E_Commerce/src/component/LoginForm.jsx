@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import axios from 'axios';
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { FormControl, FormLabel, Input, Button, useToast } from "@chakra-ui/react"; // Assuming you're using Chakra UI for styling
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/authcontext";
 
 const LoginForm = () => {
     const toast=useToast();
     const navigate=useNavigate()
+    const {setIsAuth}=useContext(AuthContext);
     const  handleSubmit = async(values) => {
         console.log("Login Submitted: ", values);
         // send request to server with username and password
@@ -21,6 +23,8 @@ const LoginForm = () => {
                     duration:2000,
                     isClosable:true
                 })
+                localStorage.setItem('token',res.data.token);
+                setIsAuth(true);
                 navigate('/products')
             } 
         } catch (error) {
