@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={isAuth?<Home />:<Login />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/products" element={isAuth?<Products/>:<Login/>} />
-        <Route path={`/product`} element={isAuth?<SingleProduct/>:<Login/>} />
+        <Route path="/product/:product_id" element={isAuth?<SingleProduct/>:<Login/>} />
       </Routes>
     </>
   )

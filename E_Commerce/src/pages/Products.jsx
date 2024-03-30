@@ -3,14 +3,12 @@ import {
   Box,
   Button,
   Flex,
-  Switch,
   Text,
   Menu,
   MenuButton,
   MenuItemOption,
   MenuList,
   MenuOptionGroup,
-  useToast,
   Grid,
   Image,
   HStack,
@@ -19,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import {StarIcon} from '@chakra-ui/icons';
 import axios from "axios";
-import SingleProduct from "./SingleProduct";
+import { Link } from "react-router-dom";
 const Products = () => {
   const [data, setData] = useState([]);
   const [products, setProducts] = useState([]);
@@ -148,7 +146,7 @@ const Products = () => {
               <Tag size="lg" bg='blue.300' color={"black"} fontWeight={700}>{ele.rating.rate}<StarIcon color='black' ml={1}/></Tag>
               <Tag size="lg" bg='green.300' color={"black"} fontWeight={700}>{ele.rating.count} Reviews</Tag>
             </HStack>
-            <Button colorScheme='pink' width={"100%"} onClick={()=><SingleProduct/>}>View Details</Button>
+            <Link to={`/product/${ele.id}`}><Button colorScheme='pink' width={"100%"}>View Details</Button></Link>
           </Box>
         ))}
       </Grid>
