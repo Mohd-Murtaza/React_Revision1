@@ -24,7 +24,7 @@ const GetTodos = (check = { todoAdd }) => {
 
   const getData = async () => {
     try {
-      const res = await axios.get(`http://localhost:4000/todos`);
+      const res = await axios.get(`https://todo-mock-server-vuc6.onrender.com/todos`);
       setTodosData(res.data);
       setTodos(res.data);
     } catch (error) {
@@ -34,7 +34,7 @@ const GetTodos = (check = { todoAdd }) => {
 
   const toggleStatus = async (id) => {
     try {
-      const toggle = await axios.patch(`http://localhost:4000/todos/${id}`, {
+      const toggle = await axios.patch(`https://todo-mock-server-vuc6.onrender.com/todos/${id}`, {
         status: "completed",
       });
       getData();
@@ -44,7 +44,7 @@ const GetTodos = (check = { todoAdd }) => {
   };
   const deleteTodo = async (id) => {
     if (window.confirm("Are you sure to remove this todo?")) {
-      await axios.delete(`http://localhost:4000/todos/${id}`);
+      await axios.delete(`https://todo-mock-server-vuc6.onrender.com/todos/${id}`);
       getData();
     }
   };
