@@ -30,6 +30,7 @@ const AddTask = () => {
   const handleSubmit = async () => {
     try {
       if (todoData.task!="" && todoData.completionDate!="" && todoData.assignedTo!= "") {
+        console.log("Submitting data");
         let postData = await axios.post(`http://localhost:4000/todos`, {
           title: todoData.title,
           completionDate: todoData.completionDate,
